@@ -18,6 +18,9 @@ The chatbot was trained on a diverse dataset of **50,000 Wikipedia documents** c
 ---
 
 ## Architecture
+
+![Architecture](images/Architecture diagram.png)
+
 1. **Topic Classification:**
    - Uses `facebook/bart-large-mnli` for zero-shot topic classification.
    - Dynamically switches between topic-specific responses and chit-chat based on confidence thresholds.
@@ -26,6 +29,8 @@ The chatbot was trained on a diverse dataset of **50,000 Wikipedia documents** c
    - Employs `SentenceTransformer` for embedding-based document retrieval.
    - Cross-encoder re-ranking ensures the most relevant documents are selected.
    - Generative model (`DistilGPT`) synthesizes concise, contextually appropriate responses.
+
+![RAG](images/RAG pipeline.png)
 
 3. **Chit-Chat Module:**
    - Powered by fine-tuned `DialoGPT-medium` for general conversations.
