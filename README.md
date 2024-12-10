@@ -45,4 +45,5 @@ The chatbot includes an analytics dashboard with the following insights:
 - **Error Metrics:** Identifies areas for improvement by analyzing error rates per topic.
 - **Session Metrics:** Monitors average session length, retrieved documents, and overall system performance.
 
+![UI](images/UI.png)
 ---
